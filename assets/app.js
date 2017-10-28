@@ -38,5 +38,5 @@ database.ref().on("child_added", function(snapshot) {
   var role = snapshot.val().role;
   var startDate = snapshot.val().startDate;
   var monthlyRate = snapshot.val().monthlyRate;
-
+  $("tbody").append("<tr><td>"+employeeName+"</td><td>"+role+"</td><td>"+startDate+"</td><td>"+monthsWorked+"</td><td>"+monthlyRate+"</td><td>"+totalBilled+"</td></tr>");
 });
