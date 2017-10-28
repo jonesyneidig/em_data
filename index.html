@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Data Management</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+	</script>
+
+	<!-- Firebase Reference -->
+	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+	<!-- Moment.js Reference -->
+	<!-- <script src="http://momentjs.com/downloads/moment.js"></script> -->	
+ 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+ 	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class = "container">
+	<div class = "jumbotron">
+		<h1>This is some text</h1>
+		<h2>This is some more text</h2>
+	</div>
+	<div class = "panel panel-info">
+		<div class = "panel-heading">Current Employees
+		</div>
+		<div id = "newTable">
+		<table class = "table table-striped table-fit">
+			<thead>
+				<tr id = "headerRow">
+					<th>Employee Name</th>
+					<th>Role</th>
+					<th>Start Date</th>
+					<th>Months Worked</th>
+					<th>Monthly Rate ($)</th>
+					<th>Total Billed ($)</th>
+				</tr>
+			</thead>
+			<tbody id = "tableBody">
+				<tr>
+					<td>test</td>
+					<td>testtesttestttestestseteste</td>
+					<td>01/01/2009</td>
+					<td>test</td>
+					<td>test</td>
+					<td>test</td>
+				</tr>
+				<tr>
+					<td>test</td>
+					<td>testtesttesttte4gteste</td>
+					<td>01/01/2009</td>
+					<td>test</td>
+					<td>test</td>
+					<td>test</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+	<div class = "panel panel-info">
+		<div class = "panel-heading">Add Employee</div>
+		<form>
+			Employee Name
+			<br>
+			<input id = "empName" type = "text">
+			<br><br>
+			Role
+			<br>
+			<input id = "empRole" type = "text">
+			<br><br>
+			Start Date (MM/DD/YY - ex: 01/01/89)
+			<br>
+			<input id = "empStart" type = "date">
+			<br><br>
+			Monthly Rate
+			<br>
+			<input id = "empRate" type = "number">
+			<br><br>
+			<button id = "submit" class = "btn-info">Submit</button>
+		</form>
+
+	</div>
+</body>
+</html>
